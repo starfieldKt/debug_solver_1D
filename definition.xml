@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ============================================
+ ソルバーの基本情報
+============================================= -->
+<SolverDefinition 
+name="Debug_solver_1D" 
+caption="Debug solver 1D" 
+version="1.0.2024101701" 
+copyright="Keita Hoshino" 
+release="2024.10.17" 
+homepage="" 
+executable="debug_solver.py" 
+iterationtype="time" 
+gridtype="1d"
+>
+
+    <!-- ============================================
+     計算条件の定義
+    ============================================= -->
+    <CalculationCondition>
+        <Tab name="Condition" caption="Condition">
+            <Item name="time_end" caption="time end">
+                <Definition valueType="integer" default="10"/>
+            </Item>
+            <Item name="length" caption="length">
+                <Definition valueType="real" default="10.0"/>
+            </Item>
+            <Item name="grid_interval" caption="grid_interval">
+                <Definition valueType="real" default="1.0"/>
+            </Item>
+
+        </Tab>
+    </CalculationCondition>
+
+</SolverDefinition>
